@@ -2,7 +2,7 @@
 
 ## Introduction
 
-LearnAFL is a knowledge-learn evolutionary fuzzer based on AFL(American Fuzzy Lop) and is written and maintained by Tai Yue \<yuetaisteinsgate@gmail.com\>. LearnAFL does not require any prior knowledge of the application or input format. It can learn partial knowledge of some paths by analyzing the test cases taht exercise the paths. More information about LearnAFL will be pubulished on IEEE Access soon.
+LearnAFL is a knowledge-learn evolutionary fuzzer based on AFL(American Fuzzy Lop) and is written and maintained by Tai Yue \<yuetaisteinsgate@gmail.com\>. LearnAFL does not require any prior knowledge of the application or input format. It can learn partial knowledge of some paths by analyzing the test cases that exercise the paths. More information about LearnAFL will be published on IEEE Access soon.
 
 ## Requirements
 
