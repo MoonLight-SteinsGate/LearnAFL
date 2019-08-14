@@ -6,8 +6,8 @@ LearnAFL is a knowledge-learn evolutionary fuzzer based on AFL(American Fuzzy Lo
 
 ## Requirements
 
-LearnAFL requires **python 2.7** to call the python script to learn knowledge. Other requirements are as same as AFL.
+LearnAFL requires **python 2.7** to call the python script to learn knowledge. Other requirements are as same as those of AFL.
 
 ## How to install and run
 
-The steps of installing and running LearnAFL are also as same as AFL.
+The steps of installing and running LearnAFL are also as same as those of AFL.
