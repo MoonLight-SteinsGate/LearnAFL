@@ -14,4 +14,4 @@ LearnAFL requires **python 2.7** to call the python script to learn knowledge. O
 
 ## How to install and run
 
-The steps of installing and running LearnAFL are also as same as those of AFL.
+The steps of installing and running LearnAFL are also as same as those of AFL. In addition, we complement the function of controlling the runtime. You can assign the runtime hours by adding the parameter `-e XXX` in running the afl-fuzz.
