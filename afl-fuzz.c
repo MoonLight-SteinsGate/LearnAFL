@@ -103,7 +103,7 @@ EXP_ST u32 exec_tmout = EXEC_TIMEOUT; /* Configurable exec timeout (ms)   */
 static u32 hang_tmout = EXEC_TIMEOUT; /* Timeout used for hang det (ms)   */
 
 EXP_ST u64 mem_limit  = MEM_LIMIT,    /* Memory cap for child (MB)        */
-           time_limit = 24;           /* Time limit for process           */
+           time_limit = 0;           /* Time limit for process           */
 
 static u32 stats_update_freq = 1;     /* Stats update frequency (execs)   */
 
@@ -9246,9 +9246,11 @@ int main(int argc, char** argv) {
 
     }
 
-    if(get_cur_time() - start_time >= time_limit * 3600 * 1000){
-      write_to_execution_file();
-      exit(0);
+    if(time_limit != 0){
+      if(get_cur_time() - start_time >= time_limit * 3600 * 1000){
+        write_to_execution_file();
+        exit(0);
+      }
     }
 
     skipped_fuzz = fuzz_one(use_argv);
